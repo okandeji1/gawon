@@ -24,12 +24,11 @@
                     <div class="text p-4 d-block">
                         <div class="meta mb-3">
                             <div><a href="#">{{$post->created_at}}</a></div>
-                            <div><a href="#">Admin</a></div>
+                            <div><a href="#">{{$post->user->role}}</a></div>
                             <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                         </div>
                         <h3 class="heading mt-3"><a href="/posts/{{$post->id}}">{{$post->header}}</a></h3>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.
-                        </p>
+                        <p>{{str_limit($post->content, $limit = 100, $end = '...')}}</p>
                     </div>
                 </div>
             </div>

@@ -76,9 +76,8 @@
     <div class="container-fluid">
         <div class="row justify-content-center mb-5 pb-3">
             <div class="col-md-5 heading-section ftco-animate text-center">
-                <h2 class="mb-4">Our Causes</h2>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
-                    live the blind texts.</p>
+                <h2 class="mb-4">Our Objectives</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae libero faucibus, auctor nibh eu, finibus magna. Aliquam in augue ante. Curabitur posuere interdum justo.</p>
             </div>
         </div>
         <div class="row">
@@ -90,7 +89,7 @@
                             <a href="#" class="img" style="background-image: url(posts/{{$post->image}});"></a>
                             <div class="text p-3 p-md-4">
                                 <h3><a href="#">{{$post->header}}</a></h3>
-
+                                <p>{{str_limit($post->content, $limit = 100, $end = '...')}}</p>
                                 <span class="donation-time mb-3 d-block">Last donation 1w ago</span>
                                 <div class="progress custom-progress-success">
                                     <div class="progress-bar bg-primary" role="progressbar" style="width: 28%"
@@ -111,15 +110,14 @@
         <div class="row justify-content-center mb-5 pb-3">
             <div class="col-md-7 heading-section ftco-animate text-center">
                 <h2 class="mb-4">Our Team</h2>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
-                    live the blind texts.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae libero faucibus, auctor nibh eu, finibus magna. Aliquam in augue ante. Curabitur posuere interdum justo.</p>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
                 <div class="staff">
                     <div class="d-flex mb-4">
-                        <div class="img" style="background-image: url(images/person_1.jpg);"></div>
+                        <div class="img" style="background-image: url(images/fatai.png);"></div>
                         <div class="info ml-4">
                             <h3><a href="#">Fatai</a></h3>
                             <div class="text">
@@ -132,7 +130,7 @@
             <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
                 <div class="staff">
                     <div class="d-flex mb-4">
-                        <div class="img" style="background-image: url(images/person_2.jpg);"></div>
+                        <div class="img" style="background-image: url(images/fatai.png);"></div>
                         <div class="info ml-4">
                             <h3><a href="#">Soliu</a></h3>
                             <div class="text">
@@ -145,7 +143,7 @@
             <div class="col-lg-4 d-flex mb-sm-4 ftco-animate">
                 <div class="staff">
                     <div class="d-flex mb-4">
-                        <div class="img" style="background-image: url(images/person_3.jpg);"></div>
+                        <div class="img" style="background-image: url(images/fatai.png);"></div>
                         <div class="info ml-4">
                             <h3><a href="#">Okandeji</a></h3>
                             <div class="text">
@@ -225,8 +223,7 @@
         <div class="row justify-content-center mb-5 pb-3">
             <div class="col-md-7 heading-section ftco-animate text-center">
                 <h2 class="mb-4">Recent from blog</h2>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
-                    live the blind texts.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae libero faucibus, auctor nibh eu, finibus magna. Aliquam in augue ante. Curabitur posuere interdum justo.</p>
             </div>
         </div>
         <div class="row d-flex">
@@ -243,8 +240,7 @@
                             <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                         </div>
                         <h3 class="heading mt-3"><a href="/posts/{{$post->id}}">{{$post->header}}</a></h3>
-                        <p>A small river named Duden flows by their place and supplies it with the necessary
-                            regelialia.</p>
+                        <p>{{str_limit($post->content, $limit = 100, $end = '...')}}</p>
                     </div>
                 </div>
             </div>
