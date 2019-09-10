@@ -33,13 +33,11 @@
 
         <div class="col-lg-6 col-md-6 col-sm-6">
             <h4 class="title">Contact Details</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                industry"s standard dummy text ever since the 1500s. Lorem Ipsum is simply dummy text of the
-                printing and typesetting industry.</p>
+            <p>Contact us below:</p>
             <ul class="contact_details">
                 <li><i class="fa fa-envelope-o"></i> info@yoursite.com</li>
-                <li><i class="fa fa-phone-square"></i> +34 5565 6555</li>
-                <li><i class="fa fa-home"></i> Some Fine Address, 887, Madrid, Spain.</li>
+                <li><i class="fa fa-phone-square"></i>	08033333202</li>
+                <li><i class="fa fa-home"></i>Shop No 1, Sarkin Aska Shopping Complex, Bakin Kasuwa Dakaiyawa, Kaugama LGA, Jigawa State.</li>
             </ul>
             <!-- contact_details -->
         </div>

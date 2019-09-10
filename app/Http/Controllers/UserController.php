@@ -54,7 +54,7 @@ class UserController extends Controller
 
         $user->createToken('gawon')->accessToken;
 
-        return redirect('/admin/dashboard')->with('success', 'Registration successful');
+        return redirect('/admin/dashboard')->with('success', 'Registration successful! Please login');
     }
 
     public function logout(Request $request)

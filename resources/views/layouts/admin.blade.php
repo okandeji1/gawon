@@ -9,8 +9,8 @@
     <meta name="keyword" content="Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
     <title>{{ config('app.name', 'Gawon Bariki') }}</title>
     <!-- Favicons -->
-    <link href="/images/cb.ico" rel="icon">
-    <link href="/images/cb.ico" rel="apple-touch-icon">
+    <link href="/images/tr.ico" rel="icon">
+    <link href="/images/tr.ico" rel="apple-touch-icon">
 
     <!-- Bootstrap core CSS -->
     <link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">

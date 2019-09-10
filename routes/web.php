@@ -19,7 +19,7 @@ Route::get('/about', function () {
     return view('about');
 });
 
-Route::resource('posts', 'PostController');
+Route::get('/posts/{id}', 'PostController@show');
 
 Route::post('/comment/store', 'CommentController@store')->name('comment.add');
 

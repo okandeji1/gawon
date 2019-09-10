@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- Mirrored from colorlib.com/preview/theme/welfare/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 09 Aug 2019 21:27:05 GMT -->
-<!-- Added by HTTrack -->
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 
 <head>
@@ -23,8 +21,8 @@
     <link rel="stylesheet" href="/css/flaticon.css">
     <link rel="stylesheet" href="/css/icomoon.css">
     <link rel="stylesheet" href="/css/style.css">
-    <link href="/images/cb.ico" rel="icon">
-    <link href="/images/cb.ico" rel="apple-touch-icon">
+    <link href="/images/tr.ico" rel="icon">
+    <link href="/images/tr.ico" rel="apple-touch-icon">
 </head>
 
 <body>

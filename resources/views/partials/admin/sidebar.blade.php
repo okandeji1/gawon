@@ -5,7 +5,7 @@
             <p class="centered"><a href="profile.html"><img src="img/ui-sam.jpg" class="img-circle" width="80"></a></p>
             <h5 class="centered">Sam Soffes</h5>
             <li class="mt">
-                <a class="active" href="/user/dashboard">
+                <a class="active" href="/admin/dashboard">
                     <i class="fa fa-dashboard"></i>
                     <span>Dashboard</span>
                 </a>
