@@ -1,5 +1,11 @@
 @extends('layouts.site')
 @section('content')
+
+<style>
+    .rol{
+        background: green;
+    }
+</style>
 <div class="hero-wrap" style="background-image: url('images/tr.png');" data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">
@@ -74,8 +80,8 @@
     <div class="container-fluid">
         <div class="row justify-content-center mb-5 pb-3">
             <div class="col-md-5 heading-section ftco-animate text-center">
-                <h2 class="mb-4">Our Objectives</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae libero faucibus, auctor nibh eu, finibus magna. Aliquam in augue ante. Curabitur posuere interdum justo.</p>
+                <h2 class="mb-4">Our Mission</h2>
+                <p>Our mission is to make our community a better place to live.</p>
             </div>
         </div>
         <div class="row">
@@ -93,7 +99,7 @@
                                     <div class="progress-bar bg-primary" role="progressbar" style="width: 28%"
                                         aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
-                                <span class="fund-raised d-block">{{$post->user->name}}</span>
+                                <span class="fund-raised d-block">{{$post->user->role}}</span>
                             </div>
                         </div>
                     </div>
@@ -108,7 +114,7 @@
         <div class="row justify-content-center mb-5 pb-3">
             <div class="col-md-7 heading-section ftco-animate text-center">
                 <h2 class="mb-4">Our Team</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae libero faucibus, auctor nibh eu, finibus magna. Aliquam in augue ante. Curabitur posuere interdum justo.</p>
+                <p>We’re driven by the idea that the best work is born from diligence, craftsmanship and assertiveness.</p>
             </div>
         </div>
         <div class="row">
@@ -120,6 +126,10 @@
                             <h3><a href="#">Mohammed A Yakubu </a></h3>
                             <div class="text">
                                 <p>Chairman</p>
+                            </div>
+                            <div class="mt-2">
+                                <a href="https://facebook.com/Muhammadya'aquob" target="_blank"><span class="icon-facebook mr-2" style="color: blue"></span></a>
+                                <a href="https://instagram.com/Muhammadya'aquob" target="_blank"><span class="icon-instagram" style="color: red"></span></a>
                             </div>
                         </div>
                     </div>
@@ -133,6 +143,10 @@
                             <h3><a href="#">Bala Zakar</a></h3>
                             <div class="text">
                                 <p>Secretary</p>
+                            </div>
+                            <div class="mt-2">
+                                <a href="https://facebook.com/balazaka" target="_blank"><span class="icon-facebook mr-2" style="color: blue"></span></a>
+                                <a href="https://instagram.com/BZD1976" target="_blank"><span class="icon-instagram" style="color: red"></span></a>
                             </div>
                         </div>
                     </div>
@@ -208,7 +222,7 @@
         <div class="row justify-content-center mb-5 pb-3">
             <div class="col-md-7 heading-section ftco-animate text-center">
                 <h2 class="mb-4">Recent from blog</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras vitae libero faucibus, auctor nibh eu, finibus magna. Aliquam in augue ante. Curabitur posuere interdum justo.</p>
+                <p>Get the latest update or visit our blog page.</p>
             </div>
         </div>
         <div class="row d-flex">
@@ -292,3 +306,9 @@
           </div>
         </div>
       </div>
+<script src="/js/jquery.min.js" type="1d17029734ae01c807389565-text/javascript"></script>
+<script>
+        function rollF(){
+            $('#roll').addClass('rol');
+        }
+</script>
