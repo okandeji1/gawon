@@ -24,6 +24,7 @@ Route::get('/posts/{id}', 'PostController@show');
 Route::post('/comment/store', 'CommentController@store')->name('comment.add');
 
 Route::post('/reply/store', 'CommentController@replyStore')->name('reply.add');
+Route::post('/contact-us', 'ContactController@contact');
 
 Route::get('/admin/gb-admin-login', function () {
     return view('login');

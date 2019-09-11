@@ -1,14 +1,9 @@
 @extends('layouts.site')
 @section('content')
-
-<style>
-    .rol{
-        background: green;
-    }
-</style>
 <div class="hero-wrap" style="background-image: url('images/tr.png');" data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
     <div class="container">
+            @include('partials.messages')
         <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
             <div class="col-md-7 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
             </div>
@@ -258,16 +253,20 @@
             </div>
             <div class="col-md-6 volunteer pl-md-5 ftco-animate">
                 <h3 class="mb-3">Contact Us</h3>
-                <form action="#" class="volunter-form">
+                <form action="/contact-us" class="volunter-form" method="POST">
+                    @csrf
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Your Name">
+                        <input type="text" name="name" class="form-control :class="{ 'is-invalid': form.errors.has('name') }" placeholder="Your Name">
+                        <has-error :form="form" field="name"></has-error>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Your Email">
+                        <input type="email" name="email" class="form-control :class="{ 'is-invalid': form.errors.has('email') }" placeholder="Your Email">
+                        <has-error :form="form" field="email"></has-error>
                     </div>
                     <div class="form-group">
-                        <textarea name="" id="" cols="30" rows="3" class="form-control"
+                        <textarea name="subject" cols="30" rows="3" class="form-control :class="{ 'is-invalid': form.errors.has('subject') }"
                             placeholder="Message"></textarea>
+                            <has-error :form="form" field="subject"></has-error>
                     </div>
                     <div class="form-group">
                         <input type="submit" value="Send Message" class="btn btn-white py-3 px-5">
@@ -305,10 +304,4 @@
             </div>
           </div>
         </div>
-      </div>
-<script src="/js/jquery.min.js" type="1d17029734ae01c807389565-text/javascript"></script>
-<script>
-        function rollF(){
-            $('#roll').addClass('rol');
-        }
-</script>
+    </div>
