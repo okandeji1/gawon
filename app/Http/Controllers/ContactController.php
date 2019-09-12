@@ -25,14 +25,14 @@ class ContactController extends Controller
 
         $mail = new PHPMailer(true);
         try {
-            $mail->SMTPDebug  = 1; // debugging: 1 = errors and messages, 2 = messages only
+            $mail->SMTPDebug  = 2; // debugging: 1 = errors and messages, 2 = messages only
             $mail->isSMTP(); // set mailer to use smtp
             $mail->Host       = "smtp.ethereal.email";
             $mail->SMTPAuth   = true; // authentication enabled
             $mail->Username = 'kristoffer.dach@ethereal.email';
             $mail->Password = 'w2UJDZutA4666ukdAr';
             $mail->SMTPSecure = 'tls'; // secure transfer enabled REQUIRED for Gmail ssl
-            $mail->Port       = 465; // or 587
+            $mail->Port = 587; // or 465
             $mail->setFrom($email);
             $mail->FromName = $name;
             $mail->Subject = $subject;

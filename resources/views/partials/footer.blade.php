@@ -46,8 +46,6 @@
             <div class="col-md-12 text-center">
                 <p>
                     Copyright &copy;
-                    <script data-cfasync="false"
-                        src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
                     <script
                         type="1d17029734ae01c807389565-text/javascript">document.write(new Date().getFullYear());</script>
                     All rights reserved | This website is designed <i class="icon-heart text-danger" aria-hidden="true"></i> by <a

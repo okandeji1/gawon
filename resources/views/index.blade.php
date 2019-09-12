@@ -189,9 +189,9 @@
                 <span class="icon-search"></span>
             </div>
         </a>
-        <a href="images/d2.png"
+        <a href="images/b5.png"
             class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate"
-            style="background-image: url(images/d2.png);">
+            style="background-image: url(images/b5.png);">
             <div class="icon d-flex justify-content-center align-items-center">
                 <span class="icon-search"></span>
             </div>
@@ -203,7 +203,7 @@
                 <span class="icon-search"></span>
             </div>
         </a>
-        <a href="images/c9.png"
+        <a href="images/b9.png"
             class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate"
             style="background-image: url(images/c9.png);">
             <div class="icon d-flex justify-content-center align-items-center">
@@ -264,7 +264,7 @@
                         <has-error :form="form" field="email"></has-error>
                     </div>
                     <div class="form-group">
-                        <textarea name="subject" cols="30" rows="3" class="form-control :class="{ 'is-invalid': form.errors.has('subject') }"
+                        <textarea name="subject" class="form-control :class="{ 'is-invalid': form.errors.has('subject') }"
                             placeholder="Message"></textarea>
                             <has-error :form="form" field="subject"></has-error>
                     </div>

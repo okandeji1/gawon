@@ -13,6 +13,7 @@
     <link href="/images/tr.ico" rel="apple-touch-icon">
 
     <!-- Bootstrap core CSS -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <!--external css-->
     <link href="/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
@@ -52,8 +53,8 @@
         <!--footer end-->
     </section>
     <!-- js placed at the end of the document so the pages load faster -->
+    <script src="{{ asset('js/app.js') }}"></script>
     <script src="/lib/jquery/jquery.min.js"></script>
-
     <script src="/lib/bootstrap/js/bootstrap.min.js"></script>
     <script class="include" type="text/javascript" src="/lib/jquery.dcjqaccordion.2.7.js"></script>
     <script src="/lib/jquery.scrollTo.min.js"></script>
