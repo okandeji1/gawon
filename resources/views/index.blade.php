@@ -166,7 +166,7 @@
                 <span class="icon-search"></span>
             </div>
         </a>
-        <a href="images/b4.png"
+        <a href="images/c7.png"
             class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate"
             style="background-image: url(images/b4.png);">
             <div class="icon d-flex justify-content-center align-items-center">
@@ -205,7 +205,7 @@
         </a>
         <a href="images/b9.png"
             class="gallery image-popup d-flex justify-content-center align-items-center img ftco-animate"
-            style="background-image: url(images/c9.png);">
+            style="background-image: url(images/c7.png);">
             <div class="icon d-flex justify-content-center align-items-center">
                 <span class="icon-search"></span>
             </div>
