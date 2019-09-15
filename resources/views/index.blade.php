@@ -87,9 +87,9 @@
                         <div class="cause-entry">
                             <a href="#" class="img" style="background-image: url(posts/{{$post->image}});"></a>
                             <div class="text p-3 p-md-4">
-                                <h3><a href="#">{{$post->header}}</a></h3>
+                                <h3><a href="/posts/{{$post->id}}">{{$post->header}}</a></h3>
                                 <p>{{str_limit($post->content, $limit = 100, $end = '...')}}</p>
-                                <span class="donation-time mb-3 d-block">Last donation 1w ago</span>
+                                <span class="donation-time mb-3 d-block"></span>
                                 <div class="progress custom-progress-success">
                                     <div class="progress-bar bg-primary" role="progressbar" style="width: 28%"
                                         aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
@@ -123,8 +123,8 @@
                                 <p>Chairman</p>
                             </div>
                             <div class="mt-2">
-                                <a href="https://facebook.com/Muhammadya'aquob" target="_blank"><span class="icon-facebook mr-2" style="color: blue"></span></a>
-                                <a href="https://instagram.com/Muhammadya'aquob" target="_blank"><span class="icon-instagram" style="color: red"></span></a>
+                                <a href="https://facebook.com/muhammadyaaquob.5" target="_blank"><span class="icon-facebook mr-2" style="color: blue"></span></a>
+                                <a href="https://instagram.com/muhammadyaaquob" target="_blank"><span class="icon-instagram" style="color: red"></span></a>
                             </div>
                         </div>
                     </div>
@@ -140,8 +140,8 @@
                                 <p>Secretary</p>
                             </div>
                             <div class="mt-2">
-                                <a href="https://facebook.com/balazaka" target="_blank"><span class="icon-facebook mr-2" style="color: blue"></span></a>
-                                <a href="https://instagram.com/BZD1976" target="_blank"><span class="icon-instagram" style="color: red"></span></a>
+                                <a href="https://facebook.com/bala.zakar" target="_blank"><span class="icon-facebook mr-2" style="color: blue"></span></a>
+                                <a href="https://instagram.com/balazakar" target="_blank"><span class="icon-instagram" style="color: red"></span></a>
                             </div>
                         </div>
                     </div>

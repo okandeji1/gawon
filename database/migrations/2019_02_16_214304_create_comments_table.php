@@ -17,6 +17,8 @@ class CreateCommentsTable extends Migration
             $table->increments('id');
             $table->integer('user_id')->unsigned();
             $table->integer('parent_id')->unsigned();
+            $table->string('name');
+            $table->string('email');
             $table->text('message');
             $table->integer('commentable_id')->unsigned();
             $table->string('commentable_type');

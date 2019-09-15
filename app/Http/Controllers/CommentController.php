@@ -36,15 +36,15 @@ class CommentController extends Controller
      */
     public function store(Request $request)
     {
-        $this -> validate($request, [
-            'message' => 'required',
+        $this->validate($request, [
             'name' => 'required',
             'email' => 'required',
+            'message' => 'required',
         ]);
         $comment = new Comment;
-        $comment->message = $request->input('message');
         $comment->name = $request->input('name');
         $comment->email = $request->input('email');
+        $comment->message = $request->input('message');
         $post = Post::find($request->input('post_id'));
         $post->comments()->save($comment);
 

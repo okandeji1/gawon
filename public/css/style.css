@@ -9813,7 +9813,7 @@ h5,
     padding-bottom: 0.9rem;
     padding-left: 20px;
     padding-right: 20px;
-    color: rgba(255, 255, 255, 0.8);
+    color: #155724;
     font-weight: 400;
     opacity: 1 !important;
 }
@@ -10246,15 +10246,15 @@ h5,
 }
 
 .btn.btn-primary {
-    background: #f86f2d;
-    border: 1px solid #f86f2d;
+    background: #155724;
+    border: 1px solid green;
     color: #fff;
 }
 
 .btn.btn-primary:hover {
     border: 1px solid #f86f2d;
     background: 0 0 !important;
-    color: #f86f2d;
+    color: #b21f2d;
 }
 
 .btn.btn-primary.btn-outline-primary {

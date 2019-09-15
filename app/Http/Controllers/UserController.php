@@ -20,9 +20,9 @@ class UserController extends Controller
     public function login(Request $request)
     {
         $this->validate($request, [
-                'email' => 'required|email',
-                'password' => 'required',
-            ]);
+            'email' => 'required|email',
+            'password' => 'required',
+        ]);
 
         $credentials = [
             'email' => $request->email,
@@ -31,7 +31,7 @@ class UserController extends Controller
 
         if (Auth::attempt($credentials)) {
             $user = Auth::user();
-            $user->createToken('gawon')-> accessToken;
+            $user->createToken('gawon')->accessToken;
             return redirect('/admin/dashboard');
         } else {
             return redirect()->back()->with('error', 'Invalid email or password');
@@ -41,11 +41,11 @@ class UserController extends Controller
     public function register(Request $request)
     {
         $this->validate($request, [
-                'name' => 'required|max:50',
-                'email' => 'required|email',
-                'password' => 'required|min:6',
-                'cpassword' => 'required|same:password',
-            ]);
+            'name' => 'required|max:50',
+            'email' => 'required|email',
+            'password' => 'required|min:6',
+            'cpassword' => 'required|same:password',
+        ]);
 
         $data = $request->only(['name', 'email', 'password']);
         $data['password'] = bcrypt($data['password']);
@@ -54,7 +54,7 @@ class UserController extends Controller
 
         $user->createToken('gawon')->accessToken;
 
-        return redirect('/admin/dashboard')->with('success', 'Registration successful! Please login');
+        return redirect('/admin/gb-admin-login')->with('success', 'Registration successful! Please login');
     }
 
     public function logout(Request $request)

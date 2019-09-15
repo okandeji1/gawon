@@ -5,7 +5,7 @@
     <div class="container">
     <div class="row no-gutters slider-text align-items-center justify-content-center" data-scrollax-parent="true">
     <div class="col-md-7 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
-    <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href="/">Home</a></span> <span class="mr-2"><a href="blog.html">Blog</a></span> <span>Blog Details</span></p>
+    <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href="/">Home</a></span> <span class="mr-2"><a href="#">Blog</a></span> <span>Blog Details</span></p>
     <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Blog Details</h1>
     </div>
     </div>
@@ -41,6 +41,7 @@
     <div class="comment-form-wrap pt-5">
     <h3 class="mb-5">Leave a comment</h3>
     <form action="{{ route('comment.add') }}" method="POST" class="p-5 bg-light">
+        @csrf
     <div class="form-group">
     <label for="name">Name *</label>
     <input type="text" class="form-control" id="name" name="name" required>
