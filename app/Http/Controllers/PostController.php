@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Post;
-use Validator;
 use Illuminate\Http\Request;
 
 class PostController extends Controller
@@ -25,7 +24,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        $posts = Post:: orderBy('created_at', 'desc')->paginate(10);
+        $posts = Post::orderBy('created_at', 'desc')->paginate(10);
         return view('index')->with('posts', $posts);
     }
 
@@ -36,7 +35,7 @@ class PostController extends Controller
      */
     public function blog()
     {
-        $posts = Post:: orderBy('created_at', 'desc')->paginate(10);
+        $posts = Post::orderBy('created_at', 'desc')->paginate(10);
         return view('blog')->with('posts', $posts);
     }
 
@@ -58,7 +57,7 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        $this -> validate($request, [
+        $this->validate($request, [
             'header' => 'required',
             'content' => 'required',
             'image' => 'required'
@@ -73,9 +72,9 @@ class PostController extends Controller
             // Get just the extension
             $extension = $request->file('image')->getClientOriginalExtension();
             // File nameto store
-            $fileNameToStore = $fileName.'_'.time().'.'.$extension;
+            $fileNameToStore = $fileName . '_' . time() . '.' . $extension;
             // Upload image
-            \Image::make($request->file('image'))->save(public_path('posts/').$fileNameToStore);
+            \Image::make($request->file('image'))->save(public_path('posts/') . $fileNameToStore);
         } else {
             return redirect()->back()->with('error', 'Image is required');
         }
@@ -99,7 +98,8 @@ class PostController extends Controller
     public function show($id)
     {
         $post = Post::find($id);
-        return view('show')->with('post', $post);
+        $posts = Post::orderBy('created_at', 'desc')->paginate(10);
+        return view('show', compact(['post', $post, 'posts', $posts]));
     }
 
     /**

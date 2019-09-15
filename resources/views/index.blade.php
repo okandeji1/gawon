@@ -229,7 +229,7 @@
                     </a>
                     <div class="text p-4 d-block">
                         <div class="meta mb-3">
-                            <div><a href="#">{{$post->created_at}}</a></div>
+                            <div><a href="#">{{$post->created_at->format('F j, Y')}}</a></div>
                             <div><a href="#">{{$post->user->role}}</a></div>
                             <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
                         </div>

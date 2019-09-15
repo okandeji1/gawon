@@ -64,17 +64,22 @@
     <div class="col-md-4 sidebar ftco-animate">
     <div class="sidebar-box ftco-animate">
     <h3>Recent Blog</h3>
+    @foreach ($posts->chunk(3) as $row)
+    @foreach($row as $post)
     <div class="block-21 mb-4 d-flex">
-    <a class="blog-img mr-4" style="background-image: url(images/image_1.jpg);"></a>
+    <a class="blog-img mr-4" style="background-image: url(posts/{{$post->image}});"></a>
     <div class="text">
-    <h3 class="heading"><a href="#">Even the all-powerful Pointing has no control about the blind texts</a></h3>
+    <h3 class="heading"><a href="/posts/{{$post->id}}">{{$post->header}}</a></h3>
     <div class="meta">
-    <div><a href="#"><span class="icon-calendar"></span> July 12, 2018</a></div>
-    <div><a href="#"><span class="icon-person"></span> Admin</a></div>
+    <div><a href="#"><span class="icon-calendar"></span> {{$post->created_at->format('F j, Y')}}</a></div>
+    <div><a href="#"><span class="icon-person"></span> {{$post->user->role}}</a></div>
     <div><a href="#"><span class="icon-chat"></span> 19</a></div>
     </div>
     </div>
     </div>
+    @endforeach
+    @break
+    @endforeach
     <div class="block-21 mb-4 d-flex">
     <a class="blog-img mr-4" style="background-image: url(images/image_2.jpg);"></a>
     <div class="text">
